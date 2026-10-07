@@ -100,17 +100,17 @@ const algorithmTopics = ['Arrays', 'Strings', 'Maps & Sets', 'Binary Search', 'P
 const Icon = ({ name, size = 20 }) => {
   const common = { width: size, height: size, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: '1.8', strokeLinecap: 'round', strokeLinejoin: 'round', 'aria-hidden': 'true' }
   const paths = {
-    arrow: <><path d="M5 12h13"/><path d="m13 6 6 6-6 6"/></>,
-    external: <><path d="M14 5h5v5"/><path d="m10 14 9-9"/><path d="M19 14v5H5V5h5"/></>,
-    github: <><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-1.5 6-6a4.6 4.6 0 0 0-1-3.2A4.2 4.2 0 0 0 18.9 2S17.4 1.5 15 3a12.2 12.2 0 0 0-6 0C6.6 1.5 5.1 2 5.1 2A4.2 4.2 0 0 0 5 5.3 4.6 4.6 0 0 0 4 8.5c0 4.5 3 6 6 6a4.8 4.8 0 0 0-1 3.5v4"/><path d="M9 18c-4.5 2-4.5-2-6-2"/></>,
-    linkedin: <><path d="M16 8a6 6 0 0 1 6 6v6h-4v-6a2 2 0 0 0-4 0v6h-4v-8h4"/><path d="M4 9h4v11H4z"/><path d="M6 4.5a2 2 0 1 0 0 .01"/></>,
-    mail: <><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></>,
-    sun: <><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></>,
-    moon: <path d="M20.7 15.3A8.5 8.5 0 0 1 8.7 3.3 8.5 8.5 0 1 0 20.7 15.3Z"/>,
-    menu: <><path d="M4 6h16M4 12h16M4 18h16"/></>,
-    check: <path d="m5 12 4 4L19 6"/>,
-    globe: <><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></>,
-    code: <><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></>,
+    arrow: <><path d="M5 12h13" /><path d="m13 6 6 6-6 6" /></>,
+    external: <><path d="M14 5h5v5" /><path d="m10 14 9-9" /><path d="M19 14v5H5V5h5" /></>,
+    github: <><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-1.5 6-6a4.6 4.6 0 0 0-1-3.2A4.2 4.2 0 0 0 18.9 2S17.4 1.5 15 3a12.2 12.2 0 0 0-6 0C6.6 1.5 5.1 2 5.1 2A4.2 4.2 0 0 0 5 5.3 4.6 4.6 0 0 0 4 8.5c0 4.5 3 6 6 6a4.8 4.8 0 0 0-1 3.5v4" /><path d="M9 18c-4.5 2-4.5-2-6-2" /></>,
+    linkedin: <><path d="M16 8a6 6 0 0 1 6 6v6h-4v-6a2 2 0 0 0-4 0v6h-4v-8h4" /><path d="M4 9h4v11H4z" /><path d="M6 4.5a2 2 0 1 0 0 .01" /></>,
+    mail: <><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></>,
+    sun: <><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></>,
+    moon: <path d="M20.7 15.3A8.5 8.5 0 0 1 8.7 3.3 8.5 8.5 0 1 0 20.7 15.3Z" />,
+    menu: <><path d="M4 6h16M4 12h16M4 18h16" /></>,
+    check: <path d="m5 12 4 4L19 6" />,
+    globe: <><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" /></>,
+    code: <><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14" /></>,
   }
   return <svg {...common}>{paths[name]}</svg>
 }
@@ -166,19 +166,19 @@ function App() {
       <main id="top">
         <section className="hero section-pad">
           <div className="hero-grid container">
+
             <div className="hero-copy">
-              <div className="eyebrow"><span className="eyebrow-dot"></span> Available for freelance & collaboration</div>
-              <h1>Building <span className="accent-text">useful</span> digital experiences that feel effortless.</h1>
-              <p className="hero-lead">I help small businesses turn website visitors into customers through fast, modern and user-friendly websites — with React at the center.</p>
-              <div className="hero-actions">
-                <a className="btn btn-primary" href="#projects">See my work <Icon name="arrow" size={18} /></a>
-                <a className="btn btn-ghost" href={`mailto:${profile.email}`}>Start a project <Icon name="mail" size={18} /></a>
+              <h1 className="name-title">Karem Khaled</h1>
+
+              <div className="eyebrow">
+                <span className="eyebrow-dot"></span>
+                Frontend Developer · React Developer
               </div>
-              <div className="hero-meta">
-                <span><strong>~2 years</strong> practical web experience</span>
-                <span><strong>React-first</strong> frontend workflow</span>
-                <span><strong>Full-stack</strong> perspective</span>
-              </div>
+
+              <p className="hero-lead">
+                I help small businesses turn website visitors into customers through
+                fast, modern and user-friendly websites — with React at the center.
+              </p>
             </div>
 
             <div className="hero-visual">
